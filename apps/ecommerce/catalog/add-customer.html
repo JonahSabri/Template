@@ -1467,7 +1467,7 @@ Like: www.facebook.com/keenthemes
 														<span class="menu-bullet">
 															<span class="bullet bullet-dot"></span>
 														</span>
-														<span class="menu-title">رزرو جدید</span>
+														<span class="menu-title">پروفایل</span>
 														<span class="menu-arrow"></span>
 													</span>
 													<!--end:Menu link-->
@@ -4998,7 +4998,7 @@ Like: www.facebook.com/keenthemes
 								<!--begin::Page title-->
 								<div class="page-title d-flex flex-column me-5 py-2">
 									<!--begin::Title-->
-									<h1 class="d-flex flex-column text-dark fw-bold fs-3 mb-0">افزودن رزرو</h1>
+									<h1 class="d-flex flex-column text-dark fw-bold fs-3 mb-0">افزودن مشتری</h1>
 									<!--end::Title-->
 									<!--begin::Breadcrumb-->
 									
@@ -5109,7 +5109,13 @@ Like: www.facebook.com/keenthemes
 										<!--begin::Thumbnail settings-->
 										<div class="card card-flush py-4">
 											<!--begin::کارت header-->
-										
+											<div class="card-header">
+												<!--begin::کارت title-->
+												<div class="card-title">
+													<h2>تصویر شاخص</h2>
+												</div>
+												<!--end::کارت title-->
+											</div>
 											<!--end::کارت header-->
 											<!--begin::کارت body-->
 											<div class="card-body text-center pt-0">
@@ -5164,7 +5170,7 @@ Like: www.facebook.com/keenthemes
 											<div class="card-header">
 												<!--begin::کارت title-->
 												<div class="card-title">
-													<h2>وضعیت</h2>
+													<h2>گروه بندی مشتریان</h2>
 												</div>
 												<!--end::کارت title-->
 												<!--begin::کارت toolbar-->
@@ -5179,8 +5185,8 @@ Like: www.facebook.com/keenthemes
 												<!--begin::انتخاب2-->
 												<select class="form-select mb-2" data-control="select2" data-hide-search="true" data-placeholder="انتخاب " id="kt_ecommerce_add_product_status_select">
 													<option></option>
-													<option value="published" selected="selected">فعال</option>
-													<option value="ذخیره شده">غیر فعال</option>
+													<option value="published" selected="selected">پیش فرض</option>
+													<option value="ذخیره شده">پیش فرض</option>
 											
 												</select>
 												<!--end::انتخاب2-->
@@ -5204,7 +5210,7 @@ Like: www.facebook.com/keenthemes
 												<!--begin::کارت title-->
 												<div class="card-title">
 												
-													<h2>انتخاب مشتری</h2>
+													<h2>وضعیت</h2>
 												</div>
 												<!--end::کارت title-->
 											</div>
@@ -5215,10 +5221,11 @@ Like: www.facebook.com/keenthemes
 												<!--begin::Tags-->
 												<!--end::Tags-->
 												<!--begin::انتخاب2-->
-												<select class="form-select mb-2" data-control="select2" data-placeholder="انتخاب مشتری " data-allow-clear="true" multiple="multiple">
+												<select class="form-select mb-2" data-control="select2" data-placeholder="انتخاب " data-allow-clear="true" multiple="multiple">
 													<option></option>
-													<option value="کامپیوترها">optional</option>
-													<option value="ساعت">optional</option>
+													<option value="کامپیوترها">مشتری جدید</option>
+													<option value="ساعت">تایید شده</option>
+													<option value="ساعت">بلاک شده</option>
 												</select>
 												<!--end::انتخاب2-->
 												<!--begin::توضیحات-->
@@ -5239,7 +5246,6 @@ Like: www.facebook.com/keenthemes
 											</div>
 											<!--end::کارت body-->
 										</div>
-
 										<!--end::دسته بندی & tags-->
 										<!--begin::هفتهly sales-->
 										
@@ -5255,7 +5261,7 @@ Like: www.facebook.com/keenthemes
 										<ul class="nav nav-custom nav-tabs nav-line-tabs nav-line-tabs-2x border-0 fs-4 fw-semibold mb-n2">
 											<!--begin:::Tab item-->
 											<li class="nav-item">
-												<a class="nav-link text-active-primary pb-4 active" data-bs-toggle="tab" href="#kt_ecommerce_add_product_general">رزرو جدید</a>
+												<a class="nav-link text-active-primary pb-4 active" data-bs-toggle="tab" href="#kt_ecommerce_add_product_general">پروفایل</a>
 											</li>
 											<!--end:::Tab item-->
 											<!--begin:::Tab item-->
@@ -5273,64 +5279,61 @@ Like: www.facebook.com/keenthemes
 														<!--begin::کارت header-->
 														<div class="card-header">
 															<div class="card-title">
-																<h2>رزرو جدید</h2>
+																<h2>پروفایل</h2>
 															</div>
 														</div>
 														<!--end::کارت header-->
 														<!--begin::کارت body-->
 														<div class="card-body pt-0">
 															<!--begin::Input group-->
-															
 															<div class="mb-10 fv-row">
 																<!--begin::Tags-->
-																<label class="required form-label">انتخاب سرویس</label>
+																<label class="required form-label">نام</label>
 																<!--end::Tags-->
 																<!--begin::Input-->
-																<select class="form-select mb-10" data-control="select2" data-placeholder="انتخاب سرویس " data-allow-clear="true" multiple="multiple">
-													<option></option>
-													<option value="کامپیوترها">optional</option>
-													<option value="ساعت">optional</option>
-												</select>
+																<input type="text" name="product_name" class="form-control mb-2" placeholder="نام " value="" />
 																<!--end::Input-->
 															</div>
 															<div class="mb-10 fv-row">
 																<!--begin::Tags-->
-																<label class="required form-label">انتخاب تاریخ </label>
+																<label class="required form-label">نام خانوادگی</label>
 																<!--end::Tags-->
 																<!--begin::Input-->
-																<select class="form-select mb-8" data-control="select2" data-placeholder="انتخاب تاریخ" data-allow-clear="true" multiple="multiple">
-													<option></option>
-													<option value="کامپیوترها">optional</option>
-													<option value="ساعت">optional</option>
-												</select>
+																<input type="text" name="product_name" class="form-control mb-2" placeholder="نام خانوادگی " value="" />
 																<!--end::Input-->
 															</div>
 															<div class="mb-10 fv-row">
 																<!--begin::Tags-->
-																<label class="required form-label">از ساعت</label>
+																<label class="required form-label">شماره تلفن</label>
 																<!--end::Tags-->
 																<!--begin::Input-->
-																<select class="form-select mb-2" data-control="select2" data-placeholder="از ساعت " data-allow-clear="true" multiple="multiple">
-													<option></option>
-													<option value="کامپیوترها">optional</option>
-													<option value="ساعت">optional</option>
-												</select>
+																<input type="text" name="product_name" class="form-control mb-2" placeholder="شماره تلفن " value="" />
 																<!--end::Input-->
 															</div>
 															<div class="mb-10 fv-row">
 																<!--begin::Tags-->
-																<label class="required form-label">تا ساعت</label>
+																<label class="required form-label">ایمیل</label>
 																<!--end::Tags-->
 																<!--begin::Input-->
-																<select class="form-select mb-2" data-control="select2" data-placeholder="تا ساعت " data-allow-clear="true" multiple="multiple">
-													<option></option>
-													<option value="کامپیوترها">optional</option>
-													<option value="ساعت">optional</option>
-												</select>
+																<input type="text" name="product_name" class="form-control mb-2" placeholder="ایمیل " value="" />
 																<!--end::Input-->
 															</div>
-															
-			
+															<div class="mb-10 fv-row">
+																<!--begin::Tags-->
+																<label class="required form-label">کد ملی</label>
+																<!--end::Tags-->
+																<!--begin::Input-->
+																<input type="text" name="product_name" class="form-control mb-2" placeholder="کد ملی " value="" />
+																<!--end::Input-->
+															</div>
+															<div class="mb-10 fv-row">
+																<!--begin::Tags-->
+																<label class="required form-label">ادرس</label>
+																<!--end::Tags-->
+																<!--begin::Input-->
+																<input type="text" name="product_name" class="form-control mb-2" placeholder="ادرس " value="" />
+																<!--end::Input-->
+															</div>
 															<!--end::Input group-->
 															<!--begin::Input group-->
 														
@@ -5338,27 +5341,6 @@ Like: www.facebook.com/keenthemes
 														</div>
 														<!--end::کارت header-->
 													</div>
-													<div class="card card-flush py-4">
-														<!--begin::کارت header-->
-														<div class="card-header">
-															<div class="card-title">
-
-															</div>
-														</div>
-														<!--end::کارت header-->
-														<!--begin::کارت body-->
-														<div class="card-body pt-0">
-													<div class="mb-10 fv-row">
-																<!--begin::Tags-->
-																<label class="required form-label">توضیحات</label>
-																<!--end::Tags-->
-																<!--begin::Input-->
-																<textarea type="text" name="product_name" class="form-control mb-2" placeholder="توضیحات " value=""></textarea> 
-																<!--end::Input-->
-															</div>
-															</div>
-															</div>
-
 													<!--end::پروفایل options-->
 													<!--begin::Media-->
 													<div class="card card-flush py-4">
@@ -5640,7 +5622,7 @@ Like: www.facebook.com/keenthemes
 											<!--end::Button-->
 											<!--begin::Button-->
 											<button type="submit" id="kt_ecommerce_add_product_submit" class="btn btn-primary">
-												<span class="indicator-label">ثبت رزرو</span>
+												<span class="indicator-label">ثبت مشتری</span>
 												<span class="indicator-progress">لطفا صبر کنید...
 												<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
 											</button>
@@ -6853,7 +6835,7 @@ Like: www.facebook.com/keenthemes
 							<!--begin::بخش-->
 							<div class="mb-3">
 								<a href="../../demo10/dist/apps/ecommerce/sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">Samsung</a>
-								<span class="text-gray-400 fw-semibold d-block">رزرو جدید info,timeline etc</span>
+								<span class="text-gray-400 fw-semibold d-block">پروفایل info,timeline etc</span>
 							</div>
 							<!--end::بخش-->
 							<!--begin::بخش-->
